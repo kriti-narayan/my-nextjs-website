@@ -59,6 +59,16 @@
 			<a href="/teams"> Teams</a>
 		</div>
 	</div>
+	{#if menuOpen}
+		<div
+			class="text-md absolute z-10 flex w-full flex-col items-center justify-between bg-white/20 p-4"
+		>
+			<a onclick={() => (menuOpen = false)} href="/"> Home </a>
+			<a onclick={() => (menuOpen = false)} href="/about"> About Us </a>
+			<a onclick={() => (menuOpen = false)} href="/services"> Services </a>
+			<a onclick={() => (menuOpen = false)} href="/teams"> Teams</a>
+		</div>
+	{/if}
 	<main class="relative">
 		{@render children()}
 	</main>

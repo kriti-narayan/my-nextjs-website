@@ -12,8 +12,8 @@
 <div class="font-turret flex h-screen w-screen flex-col items-center justify-center uppercase">
 	<div>
 		<span class="text-white"> Welcome </span>
-		<div class="bg-black text-8xl font-extrabold tracking-widest text-white">
-			Cyber Genix Pvt Ltd.
+		<div class="bg-black text-7xl font-extrabold tracking-widest text-white">
+			CyberGenix Security Pvt Ltd.
 		</div>
 		<canvas id="canvas3d" class="absolute inset-0 text-center opacity-90"></canvas>
 	</div>

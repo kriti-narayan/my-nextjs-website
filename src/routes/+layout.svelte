@@ -5,7 +5,7 @@
 
 <div class="h-screen w-screen overflow-x-hidden bg-black text-white">
 	<div class="font-turret z-90 flex justify-around pt-10 text-white">
-		<div class="flex w-fit items-center text-center text-xl">CyberGenix</div>
+		<div class="flex w-fit items-center text-center text-xl">CyberGenix Security</div>
 		<div class="flex w-1/4 justify-between text-xl">
 			<a href="/"> Home </a>
 			<a href="/about"> About Us </a>

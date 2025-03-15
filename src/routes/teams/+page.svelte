@@ -1,0 +1,89 @@
+<script>
+	let teams = [
+		{
+			name: 'Divyansh Mishra',
+			position: 'Founder',
+			profileImg:
+				'https://static.wixstatic.com/media/f88665_e8b9f277538947e9843b2d86b4e29465~mv2.jpg/v1/crop/x_21,y_0,w_393,h_582/fill/w_313,h_464,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/_storage_emulated_0_Pictures_Gallery_owner_ankaring%20in%20gu_IMG-20240109-WA0019_edited_edite.jpg',
+			description:
+				'Founder of Cybergenix Security Pvt.Ltd as well as a DCJSP certified ethical hacker with an aprox 2+ years of experience in the domain of cyber security.'
+		},
+		{
+			name: 'Ayush Raturi',
+			position: 'Co-Founder',
+			profileImg:
+				'https://static.wixstatic.com/media/f88665_f66ba2862cd142828ad4b65e03c22d34~mv2.jpg/v1/crop/x_22,y_0,w_341,h_505/fill/w_313,h_464,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1703570439354_edited.jpg',
+			description:
+				'Co-Founder of Cybergenix Security Pvt.Ltd and an CEH certified cyber security analyst , and aprox 2+ years of experience inthe domain of cyber security.'
+		},
+		{
+			name: 'Priyanshu Bharadwaj',
+			position: 'CTO',
+			profileImg:
+				'https://static.wixstatic.com/media/f88665_2cf2b79c2c76403aad67ada938979f5d~mv2.jpg/v1/crop/x_69,y_0,w_509,h_754/fill/w_313,h_464,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/priyanshu.jpg',
+			description:
+				'Priyanshu Bharadwaj serves as the CTO (Chief Technology Officer) of Cybergenix Security Pvt. Ltd., leading the company’s technological vision and innovation. With expertise in cutting-edge technologies and cybersecurity solutions, Priyanshu drives the development of advanced AI-driven tools and ensures the technical infrastructure aligns with the company’s strategic goals.'
+		},
+		{
+			name: 'Anchit Pandey',
+			position: 'CEO',
+			profileImg:
+				'https://static.wixstatic.com/media/f88665_bf43f2b6490b4c5eba481f95c7e6a5e3~mv2.jpg/v1/crop/x_49,y_0,w_652,h_966/fill/w_313,h_464,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/anchit_edited.jpg',
+			description:
+				' Anchit Pandey serves as the CEO of Cybergenix Security Pvt. Ltd., leading the company with a vision to revolutionize cybersecurity through innovative AI-driven solutions. With a strategic mindset and a commitment to excellence, Anchit oversees the company’s operations, growth strategies, and product development, ensuring Cybergenix Security remains at the forefront of the cybersecurity industry.'
+		},
+		{
+			name: 'Raqibul Hoda',
+			position: 'General Manager',
+			profileImg:
+				'https://static.wixstatic.com/media/f88665_bf4108d127ec47ee81868bb049ebc62c~mv2.jpg/v1/crop/x_156,y_0,w_648,h_960/fill/w_313,h_464,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/raquibul%20hoda.jpg',
+			description:
+				'Raqibul Hoda serves as the General Manager of Cybergenix Security Pvt. Ltd., bringing extensive expertise in ethical hacking and cybersecurity management to the team. With a focus on operational excellence and strategic leadership, Raqibul oversees daily operations, ensuring seamless execution of projects, team coordination, and alignment with the company’s long-term vision.'
+		}
+	];
+</script>
+
+<div class="mt-10 flex flex-col space-y-9 text-center">
+	<div class="bg-gradient-to-r from-black via-blue-900 to-blue-500 pt-20">
+		<div class="mb-8 text-center">
+			<span class="rounded-full bg-blue-500/20 p-2 px-4 text-blue-300 uppercase">Team</span>
+		</div>
+		<div class="mb-8 text-center text-5xl font-bold">Our Team</div>
+		<p>
+			Meet the team at Cybergenix Security! Our experts in cybersecurity and software development
+			<br />
+			are dedicated to providing top-notch solutions and support. Get in touch with us
+			<br />
+			to see how our team can help secure your digital world and drive your success.
+		</p>
+		<div class="my-10 flex items-center justify-center">
+			<div class="h-2 w-24 rounded-full bg-blue-500"></div>
+		</div>
+	</div>
+
+	{#each teams as team, idx (team.position)}
+		<div class="container mx-auto flex justify-around">
+			<div class="grid grid-cols-1 gap-16 md:grid-cols-2">
+				{#if (idx + 1) % 2 === 0}
+					<img src={team.profileImg} alt="About1" class="mx-auto rounded-full" />
+					<div class="text-left">
+						<div class="mb-4 font-bold text-blue-300 uppercase">{team.position}</div>
+						<div class="mb-4 text-4xl font-bold">{team.name}</div>
+						<p>
+							{team.description}
+						</p>
+					</div>
+				{:else}
+					<div class="text-left">
+						<div class="mb-4 font-bold text-blue-300 uppercase">{team.position}</div>
+						<div class="mb-4 text-4xl font-bold">{team.name}</div>
+						<p>
+							{team.description}
+						</p>
+					</div>
+					<img src={team.profileImg} alt="About1" class="mx-auto rounded-full" />
+				{/if}
+			</div>
+		</div>
+	{/each}
+</div>

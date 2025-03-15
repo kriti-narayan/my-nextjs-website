@@ -48,7 +48,7 @@
 		<div class="mb-8 text-center">
 			<span class="rounded-full bg-blue-500/20 p-2 px-4 text-blue-300 uppercase">Team</span>
 		</div>
-		<div class="mb-8 text-center text-5xl font-bold">Our Team</div>
+		<div class="mb-8 text-center text-3xl font-bold md:text-5xl">Our Team</div>
 		<p>
 			Meet the team at Cybergenix Security! Our experts in cybersecurity and software development
 			<br />
@@ -63,7 +63,7 @@
 
 	{#each teams as team, idx (team.position)}
 		<div class="container mx-auto flex justify-around">
-			<div class="grid grid-cols-1 gap-16 md:grid-cols-2">
+			<div class="hidden grid-cols-1 gap-16 md:grid md:grid-cols-2">
 				{#if (idx + 1) % 2 === 0}
 					<img src={team.profileImg} alt="About1" class="mx-auto rounded-full" />
 					<div class="text-left">
@@ -83,6 +83,16 @@
 					</div>
 					<img src={team.profileImg} alt="About1" class="mx-auto rounded-full" />
 				{/if}
+			</div>
+			<div class="grid grid-cols-1 gap-16 md:hidden md:grid-cols-2">
+				<img src={team.profileImg} alt="About1" class="mx-auto rounded-full" />
+				<div class="text-left">
+					<div class="mb-4 font-bold text-blue-300 uppercase">{team.position}</div>
+					<div class="mb-4 text-4xl font-bold">{team.name}</div>
+					<p>
+						{team.description}
+					</p>
+				</div>
 			</div>
 		</div>
 	{/each}

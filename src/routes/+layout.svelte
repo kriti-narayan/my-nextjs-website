@@ -69,7 +69,7 @@
 			<a onclick={() => (menuOpen = false)} href="/teams"> Teams</a>
 		</div>
 	{/if}
-	<main class="relative">
+	<main class="relative px-4">
 		{@render children()}
 	</main>
 	<footer class="body-font mt-8 bg-gray-900 text-gray-400">

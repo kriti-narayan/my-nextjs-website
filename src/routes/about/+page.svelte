@@ -3,8 +3,8 @@
 		<div class="mb-8 text-center">
 			<span class="rounded-full bg-blue-500/20 p-2 px-4 text-blue-300 uppercase">About Us</span>
 		</div>
-		<div class="mb-8 text-center text-5xl font-bold">Who Are We</div>
-		<p>
+		<div class="mb-8 text-center text-3xl font-bold md:text-5xl">Who Are We</div>
+		<p class="text-md">
 			Welcome to Cybergenix Security, your go-to partner for cutting-edge
 			<br />
 			cybersecurity solutions. We specialize in protecting your digital infrastructure
@@ -23,7 +23,7 @@
 				alt="About1"
 				class="rounded-xl"
 			/>
-			<div class="text-left">
+			<div class="md:text-left">
 				<div class="mb-4 font-bold text-blue-300 uppercase">Our Mission</div>
 				<div class="mb-4 text-4xl font-bold">Breaking Barriers in Cybersecurity</div>
 				<p>

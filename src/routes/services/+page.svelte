@@ -36,8 +36,8 @@
 		<div class="mb-8 text-center">
 			<span class="rounded-full bg-blue-500/20 p-2 px-4 text-blue-300 uppercase">Services</span>
 		</div>
-		<div class="mb-8 text-center text-5xl font-bold">Exclusive Services</div>
-		<p>
+		<div class="mb-8 text-center text-3xl font-bold md:text-5xl">Exclusive Services</div>
+		<p class="text-md">
 			At Cybergenix Security, we specialize in two key areas: cybersecurity <br />
 			and software development. Our cybersecurity services offer robust protection against emerging threats,
 			while our software development <br />
@@ -52,7 +52,7 @@
 	</div>
 </div>
 <div class="container mx-auto mt-20 block">
-	<div class="grid grid-cols-4 gap-16">
+	<div class="grid grid-cols-1 gap-16 md:grid-cols-4">
 		{#each events as event (event.name)}
 			<div class="rounded-xl bg-white/10 p-4 text-center">
 				<img src={event.imageUrl} alt="img" class="mb-4 rounded-xl border-2 border-white" />

@@ -18,7 +18,12 @@
 			CyberGenix Security Pvt Ltd.
 		</div>
 		<div class="hidden md:block">
-			<canvas id="canvas3d" class="absolute inset-0 text-center opacity-90"></canvas>
+			<div class="absolute inset-0 text-center opacity-90">
+				<div class="relative">
+					<canvas id="canvas3d"></canvas>
+					<div class="absolute bottom-0 h-14 w-screen bg-black text-white"></div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

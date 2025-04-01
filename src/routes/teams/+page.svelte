@@ -19,12 +19,12 @@
 				'Co-Founder of Cybergenix Security Pvt.Ltd and an CEH certified cyber security analyst , and aprox 2+ years of experience inthe domain of cyber security.'
 		},
 		{
-			name: 'Priyanshu Bharadwaj',
+			name: 'Kumar Tejaswee',
 			position: 'CTO',
 			profileImg:
-				'https://static.wixstatic.com/media/f88665_2cf2b79c2c76403aad67ada938979f5d~mv2.jpg/v1/crop/x_69,y_0,w_509,h_754/fill/w_313,h_464,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/priyanshu.jpg',
+				'https://static.wixstatic.com/media/f88665_8a12b7c9f5c84d64b5693a718c1f1bfa~mv2.jpg',
 			description:
-				'Priyanshu Bharadwaj serves as the CTO (Chief Technology Officer) of Cybergenix Security Pvt. Ltd., leading the company’s technological vision and innovation. With expertise in cutting-edge technologies and cybersecurity solutions, Priyanshu drives the development of advanced AI-driven tools and ensures the technical infrastructure aligns with the company’s strategic goals.'
+				'Kumar Tejaswee serves as the CTO (Chief Technology Officer) of Cybergenix Security Pvt. Ltd., leading the company’s technological vision and innovation. With expertise in cutting-edge technologies and cybersecurity solutions, Tejaswee drives the development of advanced AI-driven tools and ensures the technical infrastructure aligns with the company’s strategic goals.'
 		},
 		{
 			name: 'Anchit Pandey',

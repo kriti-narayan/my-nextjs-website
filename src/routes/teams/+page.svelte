@@ -22,7 +22,7 @@
 			name: 'Kumar Tejaswee',
 			position: 'CTO',
 			profileImg:
-				'https://static.wixstatic.com/media/f88665_8a12b7c9f5c84d64b5693a718c1f1bfa~mv2.jpg',
+				'https://static.wixstatic.com/media/f88665_8a12b7c9f5c84d64b5693a718c1f1bfa~mv2.jpg/v1/fill/w_319,h_517,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f88665_8a12b7c9f5c84d64b5693a718c1f1bfa~mv2.jpg',
 			description:
 				'Kumar Tejaswee serves as the CTO (Chief Technology Officer) of Cybergenix Security Pvt. Ltd., leading the company’s technological vision and innovation. With expertise in cutting-edge technologies and cybersecurity solutions, Tejaswee drives the development of advanced AI-driven tools and ensures the technical infrastructure aligns with the company’s strategic goals.'
 		},

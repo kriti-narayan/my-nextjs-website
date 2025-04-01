@@ -1,4 +1,6 @@
 <script>
+	import TopHero from '../../component/TopHero.svelte';
+
 	const events = [
 		{
 			name: 'Spreading Awareness',
@@ -31,25 +33,16 @@
 	];
 </script>
 
-<div class="mt-10 flex flex-col space-y-9 text-center">
-	<div class="bg-gradient-to-r from-black via-blue-900 to-blue-500 pt-20">
-		<div class="mb-8 text-center">
-			<span class="rounded-full bg-blue-500/20 p-2 px-4 text-blue-300 uppercase">Services</span>
-		</div>
-		<div class="mb-8 text-center text-3xl font-bold md:text-5xl">Exclusive Services</div>
-		<p class="text-md">
-			At Cybergenix Security, we specialize in two key areas: cybersecurity <br />
-			and software development. Our cybersecurity services offer robust protection against emerging threats,
-			while our software development <br />
-			expertise delivers custom solutions tailored to your needs. Together, these services ensure your
-			digital assets are secure and your <br />
-			technology drives growth. Discover how Cybergenix Security can enhance your defenses and advance
-			your business.
-		</p>
-		<div class="my-10 flex items-center justify-center">
-			<div class="h-2 w-24 rounded-full bg-blue-500"></div>
-		</div>
-	</div>
+<div class="flex flex-col space-y-9 text-center">
+	<TopHero title="Exclusive Services" tag="services">
+		At Cybergenix Security, we specialize in two key areas: cybersecurity <br />
+		and software development. Our cybersecurity services offer robust protection against emerging threats,
+		while our software development <br />
+		expertise delivers custom solutions tailored to your needs. Together, these services ensure your
+		digital assets are secure and your <br />
+		technology drives growth. Discover how Cybergenix Security can enhance your defenses and advance
+		your business.
+	</TopHero>
 </div>
 <div class="container mx-auto mt-20 block">
 	<div class="grid grid-cols-1 gap-16 md:grid-cols-4">

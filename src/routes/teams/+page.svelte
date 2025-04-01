@@ -1,4 +1,6 @@
 <script>
+	import TopHero from '../../component/TopHero.svelte';
+
 	let teams = [
 		{
 			name: 'Divyansh Mishra',
@@ -43,23 +45,14 @@
 	];
 </script>
 
-<div class="mt-10 flex flex-col space-y-9 text-center">
-	<div class="bg-gradient-to-r from-black via-blue-900 to-blue-500 pt-20">
-		<div class="mb-8 text-center">
-			<span class="rounded-full bg-blue-500/20 p-2 px-4 text-blue-300 uppercase">Team</span>
-		</div>
-		<div class="mb-8 text-center text-3xl font-bold md:text-5xl">Our Team</div>
-		<p>
-			Meet the team at Cybergenix Security! Our experts in cybersecurity and software development
-			<br />
-			are dedicated to providing top-notch solutions and support. Get in touch with us
-			<br />
-			to see how our team can help secure your digital world and drive your success.
-		</p>
-		<div class="my-10 flex items-center justify-center">
-			<div class="h-2 w-24 rounded-full bg-blue-500"></div>
-		</div>
-	</div>
+<div class="flex flex-col space-y-9 text-center">
+	<TopHero tag="team" title="our team">
+		Meet the team at Cybergenix Security! Our experts in cybersecurity and software development
+		<br />
+		are dedicated to providing top-notch solutions and support. Get in touch with us
+		<br />
+		to see how our team can help secure your digital world and drive your success.
+	</TopHero>
 
 	{#each teams as team, idx (team.position)}
 		<div class="container mx-auto flex justify-around">

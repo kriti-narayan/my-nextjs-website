@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Motion } from 'svelte-motion';
 	let menuOpen = $state(false);
 </script>
 
@@ -8,7 +9,16 @@
 	<div class="flex w-fit items-center text-center text-xl">
 		<img src="/cybergenix.png" alt="logo" class="size-20" />
 		<span class="hidden md:block">
-			CyberGenix <br />Security
+			<Motion
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ duration: 2 }}
+				let:motion
+			>
+				<div use:motion>
+					CyberGenix <br />Security
+				</div>
+			</Motion>
 		</span>
 	</div>
 	<div class="flex items-center justify-between md:hidden">
@@ -49,12 +59,14 @@
 		{/if}
 	</div>
 
-	<div class="hidden w-1/4 items-center justify-between text-xl md:flex">
-		<a href="/"> Home </a>
-		<a href="/about"> About Us </a>
-		<a href="/services"> Services </a>
-		<a href="/teams"> Teams</a>
-	</div>
+	<Motion animate={{ y: [-100, 10, 0] }} let:motion>
+		<div use:motion class="hidden w-1/4 items-center justify-between text-xl md:flex">
+			<a href="/"> Home </a>
+			<a href="/about"> About Us </a>
+			<a href="/services"> Services </a>
+			<a href="/teams"> Teams</a>
+		</div>
+	</Motion>
 </div>
 {#if menuOpen}
 	<div

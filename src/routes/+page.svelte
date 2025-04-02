@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Application } from '@splinetool/runtime';
 	import { onMount } from 'svelte';
+	import { Motion } from 'svelte-motion';
 	onMount(() => {
 		// @ts-expect-error html element
 		const canvas: HTMLCanvasElement = document.getElementById('canvas3d');
@@ -11,12 +12,19 @@
 
 <div class="font-turret flex h-screen w-screen flex-col items-center justify-center uppercase">
 	<div>
-		<div class="text-center text-white md:text-left">Welcome</div>
-		<div
+		<span class="text-center text-white md:text-left">
+			<Motion initial={{ x: 10 * 1000 }} animate={{ x: 0 }} transition={{ duration: 2 }} let:motion>
+				<div use:motion>Welcome</div>
+			</Motion></span
+		>
+		<span
 			class="bg-black text-center text-4xl font-extrabold tracking-widest text-white md:text-7xl"
 		>
-			CyberGenix Security Pvt Ltd.
-		</div>
+			<Motion initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 2 }} let:motion>
+				<div use:motion>CyberGenix Security Pvt Ltd.</div>
+			</Motion>
+		</span>
+
 		<div class="hidden md:block">
 			<div class="absolute inset-0 text-center opacity-90">
 				<div class="relative">

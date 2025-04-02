@@ -8,7 +8,9 @@
 >
 	<div class="flex w-fit items-center text-center text-xl">
 		<Motion let:motion animate={{ rotate: 720 }}>
-			<img use:motion src="/cybergenix.png" alt="logo" class="size-20" />
+			<a href="/">
+				<img use:motion src="/cybergenix.png" alt="logo" class="size-20" />
+			</a>
 		</Motion>
 		<span class="hidden md:block">
 			<Motion

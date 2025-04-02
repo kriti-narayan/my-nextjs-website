@@ -11,7 +11,7 @@
 		with advanced technology and expert strategies
 	</TopHero>
 
-	<div class="container mx-auto flex justify-around">
+	<div class="container mx-auto flex justify-around px-4">
 		<div class="grid grid-cols-1 gap-16 md:grid-cols-2">
 			<img
 				src="https://static.wixstatic.com/media/f88665_714282c57cef431c8ec80de2da9c0c84~mv2.jpg/v1/fill/w_580,h_380,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/pexels-fauxels-3183197.jpg 1x, https://static.wixstatic.com/media/f88665_714282c57cef431c8ec80de2da9c0c84~mv2.jpg/v1/fill/w_1160,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/pexels-fauxels-3183197.jpg 2x"

@@ -77,7 +77,7 @@
 					<img src={team.profileImg} alt="About1" class="mx-auto rounded-full" />
 				{/if}
 			</div>
-			<div class="grid grid-cols-1 gap-16 md:hidden md:grid-cols-2">
+			<div class="grid grid-cols-1 gap-16 px-4 md:hidden md:grid-cols-2">
 				<img src={team.profileImg} alt="About1" class="mx-auto rounded-full" />
 				<div class="text-left">
 					<div class="mb-4 font-bold text-blue-300 uppercase">{team.position}</div>

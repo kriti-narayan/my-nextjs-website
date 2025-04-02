@@ -44,7 +44,7 @@
 		your business.
 	</TopHero>
 </div>
-<div class="container mx-auto mt-20 block">
+<div class="container mx-auto mt-20 block px-4">
 	<div class="grid grid-cols-1 gap-16 md:grid-cols-4">
 		{#each events as event (event.name)}
 			<div class="rounded-xl bg-white/10 p-4 text-center">

@@ -58,7 +58,7 @@
 </div>
 {#if menuOpen}
 	<div
-		class="text-md absolute z-10 flex w-full flex-col items-center justify-between bg-white/20 p-4"
+		class="text-md absolute z-10 flex w-full flex-col items-center justify-between bg-gray-600 p-4"
 	>
 		<a onclick={() => (menuOpen = false)} href="/"> Home </a>
 		<a onclick={() => (menuOpen = false)} href="/about"> About Us </a>

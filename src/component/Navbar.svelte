@@ -7,7 +7,9 @@
 	class="font-turret z-90 flex justify-between border-b-2 border-b-blue-700 px-8 pt-4 text-white"
 >
 	<div class="flex w-fit items-center text-center text-xl">
-		<img src="/cybergenix.png" alt="logo" class="size-20" />
+		<Motion let:motion animate={{ rotate: 720 }}>
+			<img use:motion src="/cybergenix.png" alt="logo" class="size-20" />
+		</Motion>
 		<span class="hidden md:block">
 			<Motion
 				initial={{ opacity: 0 }}

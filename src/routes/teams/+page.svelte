@@ -55,7 +55,7 @@
 	</TopHero>
 
 	{#each teams as team, idx (team.position)}
-		<div class="container mx-auto flex justify-around">
+		<div class="mx-6 flex justify-around">
 			<div class="hidden grid-cols-1 gap-16 md:grid md:grid-cols-2">
 				{#if (idx + 1) % 2 === 0}
 					<img src={team.profileImg} alt="About1" class="mx-auto rounded-full" />

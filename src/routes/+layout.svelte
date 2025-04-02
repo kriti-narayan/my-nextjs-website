@@ -7,7 +7,7 @@
 
 <div class="h-screen w-screen overflow-x-hidden bg-black text-white">
 	<Navbar />
-	<main class="relative px-4">
+	<main class="relative md:px-4">
 		{@render children()}
 	</main>
 	<Footer />

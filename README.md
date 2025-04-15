@@ -1,38 +1,75 @@
-# sv
+# Cybergenix Security Website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A modern website for Cybergenix Security built with Next.js, TypeScript, and Tailwind CSS.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Next.js 14 with App Router
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Framer Motion for animations
+- Responsive design
+- Modern UI components
+
+## Getting Started
+
+First, install the dependencies:
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+npm install
+# or
+yarn install
+# or
+pnpm install
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Then, run the development server:
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
-## Building
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To create a production version of your app:
+## Project Structure
+
+```
+├── src/
+│   ├── app/              # Next.js app router pages
+│   │   ├── about/        # About page
+│   │   ├── services/     # Services page
+│   │   ├── teams/        # Teams page
+│   │   ├── layout.tsx    # Root layout
+│   │   └── page.tsx      # Home page
+│   ├── components/       # Reusable components
+│   │   ├── Footer.tsx
+│   │   ├── Navbar.tsx
+│   │   └── TopHero.tsx
+│   └── types/           # TypeScript type definitions
+├── public/              # Static assets
+│   ├── fonts/          # Font files
+│   └── images/         # Image assets
+└── styles/             # Global styles
+```
+
+## Building for Production
+
+To create a production build:
 
 ```bash
 npm run build
+# or
+yarn build
+# or
+pnpm build
 ```
 
-You can preview the production build with `npm run preview`.
+## Deployment
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
